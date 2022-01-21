@@ -1,0 +1,26 @@
+# item_used [Bukkit.Material] - Item used for sending letters.
+# bird_speed [m/s] - Speed at which the pigeon is travelling.
+# instant_distance [m/s] - If the recipient is within this range, the pigeon
+# will activate Ludicrous Speed and arrive at the recipient instantaneously.
+# royal_pigeon_delay [s] - (For broadcasting messages) Royal pigeons always arrive to all players simultaneously.
+# bird_travel_method [SIMULATED | SIMPLE]:
+# 
+# When the bird movement is SIMULATED it will have a physical location, following the player at set speed.
+# If the player is moving away faster than the bird travels, it will never reach the player.
+# 
+# SIMPLE travel method means the arrival delay will be calculated the moment the message is sent,
+# regardless of recipient's location changes.
+# 
+# Default player speeds: https://minecraft.gamepedia.com/Transportation
+# Some values:
+# - 7.14 m/s - Jump-sprinting
+# - 40.0 m/s - Boat on blue ice
+# - 67.3 m/s - Gliding down with Elytra 
+# - 80.0 m/s - Swimming with Dolphin's Grace and Depth Strider III
+# - 200+ m/s - Elytra + Trident with Riptide 3 during rain
+
+item_used: PAPER
+bird_speed: 20
+instant_distance: 50
+royal_pigeon_delay: 3
+bird_travel_method: SIMPLE
